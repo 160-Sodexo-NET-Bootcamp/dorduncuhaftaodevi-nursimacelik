@@ -11,7 +11,16 @@ Günde bir kez 18.00 da çalışarak (Ayni gun içinde 08:00 den 18:00) o güne 
 
 # Çözüm
 
-Ödev için şuana kadar yaptığımız uygulamanın üzerine Patika.Hangfire isminde bir proje ekledim. İşleri, proje içindeki Jobs klasöründe tanımladım. Jobları oluşturmak için BackgroundJobController kullanılabilir.
+Ödev için şuana kadar yaptığımız uygulamanın üzerine Patika.Hangfire isminde bir proje ekledim. İşleri, proje içindeki Jobs klasöründe tanımladım. Jobları oluşturmak için BackgroundJobController'daki InsertionJob ve UpdateJob çalıştırılmalı.
+
+Model olarak Order isminde bir tablo kullandım.
+
+| Column Name | Data Types | Allow Nulls |
+| :---: | :---: | :---: |
+| Id | int |  |
+| InsertionTime | datetime | + |
+| Status | nvchar(50) | + |
+
 
 ![patika_hangfire](https://user-images.githubusercontent.com/33669453/151600694-8f353bbb-2bfb-416c-b178-f6e1c964a055.png)
 
